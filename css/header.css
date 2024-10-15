@@ -1,0 +1,16 @@
+nav.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+div.menu > li {
+    list-style: none;
+}

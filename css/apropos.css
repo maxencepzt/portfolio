@@ -1,0 +1,22 @@
+@import url(variables.css);
+
+section#apropos-section > div.content {
+    padding: 100px 200px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+div.paragraphe-list {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    gap: 1em;
+}
+
+span.app-titre {
+    font-size: 45px;
+    font-weight: 700;
+}

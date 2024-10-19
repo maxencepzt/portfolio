@@ -1,16 +1,39 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <title>Maxence Poizat Portfolio</title>
+  <title>Maxence Poizat | Portfolio</title>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portefolio de Maxence Poizat">
+  <meta name="description" content="Découvrez Maxence Poizat, développeur web et C++ étudiant à l'IUT de Reims. Passionné de technologies.">
   
+  <!-- OpenGraph SEO -->
+  <meta property="og:title" content="Maxence Poizat - Développeur Web et C++" />
+  <meta property="og:description" content="Portfolio de Maxence Poizat, développeur passionné, étudiant en deuxième année à l'IUT de Reims." />
+  <meta property="og:image" content="https://maxencepoizat.com/resources/img/pp.jpg" />
+  <meta property="og:url" content="https://maxencepoizat.com" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter SEO -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Maxence Poizat - Développeur Web et C++">
+  <meta name="twitter:description" content="Découvrez mon portfolio et mes projets en développement web et C++.">
+  <meta name="twitter:image" content="https://tondomaine.com/resources/img/pp.jpg">
+  
+  <!-- Styles and variables -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/variables.css">
+
+  <!-- Section styles -->
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/accueil.css">
+  <link rel="stylesheet" href="css/apropos.css">
+  <link rel="stylesheet" href="css/projets.css">
+  <link rel="stylesheet" href="css/competences.css">
+  <link rel="stylesheet" href="css/experiences.css">
+  <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
-  <link rel="stylesheet" href="css/header.css">
   <header id="header">
     <nav class="nav">
       <div class="logo">
@@ -42,16 +65,15 @@
   </header>
 
   <main>
-    <link rel="stylesheet" href="css/accueil.css">
     <a id="accueil"></a>
     <section class="section" id="accueil-section">
       <div class="content">
         <div class="adresse">
           <svg class="fa-map-pin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M64 144a96 96 0 1 1 192 0A96 96 0 1 1 64 144zM184 286c68.1-11.4 120-70.7 120-142C304 64.5 239.5 0 160 0S16 64.5 16 144c0 71.4 51.9 130.6 120 142l0 202c0 13.3 10.7 24 24 24s24-10.7 24-24l0-202z"/></svg>
-          <span class="ville">Limours</span>
-          <span class="ville">Reims</span>
+          <h6 class="ville">Limours</h6>
+          <h6 class="ville">Reims</h6>
         </div>
-        <span class="description" id="prenom-nom">Maxence Poizat.</span>
+        <h1 class="description" id="prenom-nom">Maxence Poizat.</h1>
         <span class="description" id="profil">Étudiant en 2ème année de BUT informatique à l'IUT de Reims, spécialisé en développement C++.</span>
         <span class="description" id="description">Passionné par la technologie, je prends plaisir à explorer et à développer des projets dans divers domaines informatiques. Fort d'une curiosité naturelle et mener à bien des projets.</span>
         <span class="description" id="stage">Je suis actuellement à la recherche d'un stage de 8 à 12 semaines, entre avril et juin 2024, en Île-de-France ou à Reims.</span>
@@ -59,11 +81,10 @@
     </section>
     <div class="section-end accueil-end"></div>
     
-    <link rel="stylesheet" href="css/apropos.css">
     <a id="apropos"></a>
     <section class="section" id="apropos-section">
       <div class="content">
-        <span class="app-titre">A propos</span>
+        <h2 class="app-titre">A propos</h2>
         <div class="app-content">
             <div class="paragraphe-list">
               <p class="paragraphe">Reprehenderit duis ipsum magna duis culpa nostrud aliquip deserunt fugiat ea dolor non in Lorem. Velit laborum culpa proident pariatur id commodo amet eiusmod culpa aliquip do occaecat ex. Eu incididunt consectetur occaecat cillum do voluptate. Incididunt ad occaecat dolor eiusmod aliquip tempor laborum deserunt labore.</p>
@@ -78,13 +99,11 @@
     </section>
     <div class="section-end apropos-end"></div>
     
-    <link rel="stylesheet" href="css/projets.css">
     <a id="projets"></a>
     <section class="section" id="projets-section">
     </section>
     <div class="section-end projets-end"></div>
     
-    <link rel="stylesheet" href="css/competences.css">
     <a id="competences"></a>
     <section class="section" id="competences-section">
       <figure>
@@ -94,13 +113,11 @@
     </section>
     <div class="section-end competences-end"></div>
     
-    <link rel="stylesheet" href="css/experiences.css">
     <a id="experiences"></a>
     <section class="section" id="experiences-section">
     </section>
     <div class="section-end experiences-end"></div>
     
-    <link rel="stylesheet" href="css/contact.css">
     <a id="contact"></a>
     <section class="section" id="contact-section">
     </section>
@@ -108,6 +125,6 @@
   </main>
   
   <footer class="section" id="footer-section"></footer>
-  <script src="js/scroll-position.js"></script>
+  <script src="js/scroll-position.js" defer></script>
 </body>
 </html>

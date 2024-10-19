@@ -9,7 +9,7 @@ section#apropos-section > div.content {
     gap: 3em;
 }
 
-span.app-titre {
+h2.app-titre {
     font-size: 45px;
     font-weight: 700;
     text-align: center;

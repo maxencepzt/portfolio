@@ -21,11 +21,11 @@ div.adresse svg.fa-map-pin {
     fill: currentColor;
 }
 
-div.adresse > span.ville {
+div.adresse > h6.ville {
     font-size: x-small;
 }
 
-div.content > span#prenom-nom {
+h1#prenom-nom {
     font-size: 90px;
     font-weight: 800;
 }

@@ -6,7 +6,26 @@ section#apropos-section > div.content {
     color: var(--text-color);
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 3em;
+}
+
+span.app-titre {
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+}
+
+div.app-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4em;
+}
+
+img.app-pp {
+    width: 350px;
+    height: auto;
+    border-radius: 50%;
 }
 
 div.paragraphe-list {
@@ -14,9 +33,4 @@ div.paragraphe-list {
     flex-direction: column;
     text-align: justify;
     gap: 1em;
-}
-
-span.app-titre {
-    font-size: 45px;
-    font-weight: 700;
 }

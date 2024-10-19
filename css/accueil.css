@@ -25,7 +25,7 @@ div.adresse > span.ville {
     font-size: x-small;
 }
 
-div.content > span.prenom_nom {
+div.content > span.prenom-nom {
     font-size: 90px;
     font-weight: 800;
 }

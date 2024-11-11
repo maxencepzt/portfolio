@@ -41,29 +41,21 @@
           <img src="resources/svgs/logo.svg" alt="logo" width="50px" height="50px">
         </a>
       </div>
-      <div class="menu">
-        <li class="accueil animation">
-          <a href="#accueil">Accueil</a>
-        </li>
-        <li class="apropos animation">
-          <a href="#apropos">A propos</a>
-        </li>
-        <li class="projets animation">
-          <a href="#projets">Projets</a>
-        </li>
-        <li class="competences animation">
-          <a href="#competences">Compétences</a>
-        </li>
-        <li class="experiences animation">
-          <a href="#experiences">Experiences</a>
-        </li>
-        <li class="contact animation">
-          <a href="#contact">Contact</a>
-        </li>
+      <div class="menu" id="menu">
+        <!-- Bouton croix pour fermer le menu -->
+        <button class="close-menu" id="close-menu">&times;</button>
+        <li class="accueil animation"><a href="#accueil">Accueil</a></li>
+        <li class="apropos animation"><a href="#apropos">A propos</a></li>
+        <li class="projets animation"><a href="#projets">Projets</a></li>
+        <li class="competences animation"><a href="#competences">Compétences</a></li>
+        <li class="experiences animation"><a href="#experiences">Experiences</a></li>
+        <li class="contact animation"><a href="#contact">Contact</a></li>
       </div>
+      <div class="overlay" id="overlay"></div>
+      <button class="burger-menu" id="burger-menu">&#9776;</button>
     </nav>
   </header>
-
+  <!-- Overlay assombri -->
   <main>
     <a id="accueil"></a>
     <section class="section" id="accueil-section">
@@ -125,6 +117,7 @@
   </main>
   
   <footer class="section" id="footer-section"></footer>
+  <script src="js/burger-menu.js"></script>
   <script src="js/scroll-position.js" defer></script>
   <script src="js/typed.js"></script>
 </body>

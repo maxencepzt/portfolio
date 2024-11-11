@@ -1,9 +1,11 @@
+/* Styles pour le header */
 header#header {
     background-color: rgb(85, 85, 232);
     box-shadow: 0px 1px 10px 0px black;
     backdrop-filter: blur(10px);
 }
 
+/* Navigation */
 nav.nav {
     display: flex;
     flex-direction: row;
@@ -13,24 +15,109 @@ nav.nav {
     height: 75px;
 }
 
-div.menu {
-    display: flex;
-    flex-direction: row;
+/* Bouton de menu burger */
+.burger-menu {
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: white;
+    display: block;
 }
 
-div.menu > li {
-    list-style: none;
-    margin: 0 10px;
+/* Styles par défaut pour le menu (mobile-first) */
+.menu {
+    display: none; /* Caché par défaut */
+    flex-direction: column; /* Alignement vertical */
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgb(85, 85, 232);
+    transform: translateX(100%); /* Masqué en dehors de l'écran */
+    transition: transform 0.3s ease-in-out;
+    z-index: 10; /* Au-dessus du contenu principal */
+    padding-top: 75px;
+}
+
+.menu li {
+    text-align: center;
+    padding: 20px 0;
+    list-style-type: none;
 }
 
 div.menu > li > a {
     color: white;
     text-decoration: none;
     font-weight: 600;
-    padding: 10px; /* Ajoute un peu de padding autour des liens */
-    transition: color 0.3s
+    padding: 10px;
+    transition: color 0.3s;
 }
 
 div.menu > li > a:hover {
-    color: rgb(219, 154, 55); /* Change le fond au survol */
+    color: rgb(219, 154, 55);
+}
+
+/* Affichage du menu latéral lors de l'ouverture */
+.menu.open {
+    display: flex; /* Au lieu de display: none; pour tester */
+    transform: translateX(0); /* Garde cette ligne visible pour tester */
+}
+
+/* Bouton croix pour fermer le menu */
+.close-menu {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* Overlay assombri */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100% - 250px); /* Ajuste à la largeur de l'écran moins celle du menu */
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+}
+
+/* Afficher l'overlay quand le menu est ouvert */
+.overlay.open {
+    display: block;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+/* Media queries pour écran plus large (>=768px) */
+@media (min-width: 768px) {
+    .menu {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        transform: none;
+        width: auto;
+        height: auto;
+        padding-top: 0;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .overlay {
+        display: none; /* Pas d'overlay sur grand écran */
+    }
+
+    .close-menu {
+        display: none; /* Cache le bouton croix */
+    }
 }
